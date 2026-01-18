@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Online Student Management System</h1>
+
+    <!-- Add Student Form -->
+    <div class="container">
+        <h2>Add Student</h2>
+        <form id="studentForm">
+            <label>Student Name</label><br>
+            <input type="text" id="name" placeholder="Enter student name"><br><br>
+
+            <label>Roll Number</label><br>
+            <input type="text" id="roll" placeholder="Enter roll number"><br><br>
+
+            <label>Course</label><br>
+            <input type="text" id="course" placeholder="Enter course"><br><br>
+
+            <label>Email</label><br>
+            <input type="email" id="email" placeholder="Enter email"><br><br>
+
+            <button type="button">Add Student</button>
+        </form>
+    </div>
+
+    <br>
+
+    <!-- Student List Table -->
+    <div class="container">
+        <h2>Student List</h2>
+        <input type="text" id="search" placeholder="Search by Name or Roll No">
+        <table border="1" width="100%" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+                <!-- JS se data aayega -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
